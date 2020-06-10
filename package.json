@@ -1,0 +1,17 @@
+{
+  "name": "bank-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "db": "/Users/Femi/mongodb/bin/mongod.exe --dbpath=/Users/Femi/mongodb-data"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16",
+    "validator": "^13.0.0"
+  }
+}

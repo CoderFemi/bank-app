@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Bank Finder</title>
+        <link rel="stylesheet" href="/styles/styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">Bank Finder</h1>
+                <h2 class="header__subtitle">Bringing your bank closer to you.</h2>
+            </div>
+        </header>
+        <div class="actions">
+            <div class="actions__container">
+                <h3>Find a Bank in Your State</h3>
+            </div>
+            <div class="actions__container">
+                <div>
+                    <form>
+                        <select name="bankSelect" id="bank-select" class="dropdown">
+                            <option value="none" selected disabled hidden>Choose a bank</option>
+                            <!-- Dynamic Options -->
+                        </select>
+                    </form>
+                </div>
+                <div id='toggle-state-select' style='display:none'>
+                    <form>
+                        <select name="stateSelect" id="state-select" class="dropdown">
+                            <option value="none" selected disabled hidden>Choose a state</option>
+                            <!-- Dynamic Options -->
+                        </select>
+                        <button id='find' class="button">Find</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="actions__containertwo">
+                <h3>Search by Location</h3>
+            </div>
+            <div class="actions__container">
+                <form id="search-form">
+                    <input type="text" id="form-input" name="searchLocation" placeholder="Location e.g Surulere" class="input">
+                    <button id='search' class="button">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <p id='message' class="title-input"></p>
+        </div>
+        <div id='bank-div' class="container">
+            <!-- Rendered banks -->
+        </div>
+        <script src='/js/app.js'></script>
+    </body>
+</html>
