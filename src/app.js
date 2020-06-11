@@ -15,7 +15,7 @@ app.use(express.static(publicDirectoryPath))
 // Define routes
 app.use(bankRouter)
 
-mongoose.connect(process.env.MONGODB_URL || HOST_URL, {
+mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
